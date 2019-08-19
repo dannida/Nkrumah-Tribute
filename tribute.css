@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Raleway'); 
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    /*background-image: url(\images/ghFlag1.jpg);
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color: white;      
+}
+/*img {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    background-size: 100%;
+}*/
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+    font: bold 20px Sans-Serif;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.mainNav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    
+}
+
+.mainNav li {
+    padding: 0 3%;
+}
+.mainHeader {
+    /*background-color: rgba(76, 99, 13, 0.6);*/
+    background-image: url(\images/banner1jpg.jpg);
+    /*background-blend-mode: color-dodge;*/
+    background-size: cover;
+    padding: 30px;
+}
+
+header, h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: aqua;
+    margin: 0;
+}
+
+.groupBox {
+    /*border: 1px solid rgb(99, 75, 75);*/
+    padding: 3%;
+    margin: 2%;
+    background-color: lightgrey;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#tribute-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 30px;
+}
+
+.aboutOne {
+    border: 1px solid grey;
+    background-color: rgb(215, 240, 252);
+    padding: 40px 40px 20px 40px;
+    -moz-box-shadow: inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow: inset 0 0 15px #000000;
+    border-radius: 40px;
+}
+
+.aboutButton {
+    /*the first three lines of code centers the button and makes the button responsive*/
+    display: block;
+    /*width: 100px;*/
+    margin: 0 auto;
+    font-family: Lobster,Arial,sans-serif;
+    padding: 12px 28px;
+    color: #195566;
+    border: 1px solid #92bcdd;
+    border-radius: 10px;
+    background-color: rgba(3,3,3,.1);
+    /*margin-top: 2px;*/
+}
+
+button:hover, button:focus {
+
+    border: 0.5px solid gold;
+    box-shadow: 0 0.5em 0.5em 0em #ffa260;
+    /*transform: translateY(-0.25em);*/
+}
+
+#tribute-link {
+    font-family: Lobster,Arial,sans-serif;
+    text-decoration: none;
+}
+
+.tribute-link-again {
+    font-family: Lobster,Arial,sans-serif;
+    text-decoration: none;
+}
+
+.ThoughtsGrid {
+    display: grid;
+    /*grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );*/
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    background-image: linear-gradient(to right, rgb(177, 13, 13), rgb(228, 196, 17), rgb(18, 156, 18));
+    border-radius: 40px;
+
+    grid-template-areas: 
+        "img thought1"
+        "img thought2"
+        "img thought3"
+        "img thought4";
+}
+
+#OsagyefoImg {
+    grid-area: img;
+}
+
+#thought1 {
+    grid-area: thought1;
+}
+
+#thought2 {
+    grid-area: thought2;
+} 
+
+#thought3 {
+    grid-area: thought3;
+}
+
+#thought4 {
+    grid-area: thought4;
+}
+
+.ThoughtsOne {
+    border: 0.5px solid red;
+    box-shadow: -7px 0 0px rgb(218, 8, 8);
+    border-radius: 20px;
+    background-color: #a1f7fd8a; 
+    
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    display: block;
+}
+
+.responsive:hover {
+    opacity: 1.0;
+}
+
+.quotesText {
+    font: bold 15px Sans-Serif;
+    margin: 0 0 10px;
+    padding: 30px;
+    color: #000000;
+}
+
+.quotesAuthor {
+    text-align: right;
+    padding-right: 20px;
+    font: bold 15px Sans-Serif;
+    color: white;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.MomentsGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 2fr 2fr;
+    grid-gap: 20px;
+    position: relative;
+    overflow-x: hidden;
+
+    grid-template-areas: 
+    "column1 column2"
+    "column3 column3";
+}
+
+#dailyGrahicMoment{
+    grid-area: column1;
+}
+
+#ciaMoments {
+    grid-area: column2
+}
+
+#gifOfIndependenceDayDeclaration {
+    grid-area: column3;
+    justify-self: center;
+}
+
+.MomentsOne {
+    position: absolute;
+    border: 2px solid greenyellow;
+    justify-self: center; 
+}
+
+.footer_Container {
+     display: grid;
+     grid-template-columns: 2fr 2fr 2fr;
+     grid-template-rows: 2fr;   
+     grid-gap: 20px;
+   
+}
+
+.footerThings {
+    
+}
+
+.footerPosi {
+    position: relative;
+    padding: 40px 50px 50px 50px;
+    background-color: #000000;
+    opacity: 0.9;
+    overflow-x: hidden;
+}
+
+#social {
+    justify-self: center;
+}
+
+#designedBy {
+    justify-self: right;    
+}
+
+#socialMedia {
+    display: flex;
+    padding: 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    min-width: 10rem;
+}
+
+#socialMedia li {
+    list-style-type: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+}
+
+#socialMedia li a {
+    border-bottom: none;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-github {
+      background: grey;
+      color: white;
+  }
+
+  .fa-free-code-camp {
+      background-color: green;
+      color: white;
+  }
+
+  #img-div {
+    padding: 2%;
+    margin: 2% 8%;
+    background-color: black;
+    /*box-shadow: 10px 10px 5px #888888;*/
+  }
+  
+  #image {
+    height: auto;
+    max-width: 80%;    
+    margin-left: auto;    
+    margin-right: auto;
+    padding-top: 20px;    
+    display: block;
+  }
+
+  #img-caption {
+    font-family: Lobster,Arial,sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 2px;
+    color: white;
+  }
+
+  .p-color {
+      color: white;
+      font-family: Lobster,Arial,sans-serif;
+  }
