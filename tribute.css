@@ -58,7 +58,7 @@ nav a:hover {
 }
 .mainHeader {
     /*background-color: rgba(76, 99, 13, 0.6);*/
-    background-image: url(\images/banner1jpg.jpg);
+    background-image: url(https://github.com/dannida/Nkrumah-Tribute/blob/master/banner1jpg.jpg);
     /*background-blend-mode: color-dodge;*/
     background-size: cover;
     padding: 30px;
